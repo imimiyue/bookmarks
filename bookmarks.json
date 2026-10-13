@@ -1,0 +1,12 @@
+[
+  {
+    "name": "北京大学",
+    "url": "https://www.pku.edu.cn/",
+    "folders": ["pku"]
+  },
+  {
+    "name": "Python 官方文档",
+    "url": "https://docs.python.org/3/",
+    "folders": ["tool", "programming", "python"]
+  }
+]
