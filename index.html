@@ -3,105 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>書籤</title>
+<title>书签（iBookmarks）</title>
 <style>
 :root{color-scheme:light dark;--bg:#f6f7f9;--panel:#fff;--text:#20242b;--muted:#7b818b;--line:#e8eaee;--accent:#4778e8;--hover:#f0f3f8;--shadow:0 2px 12px #17203308}
 @media(prefers-color-scheme:dark){:root{--bg:#111318;--panel:#191c22;--text:#edf0f5;--muted:#9ba2ad;--line:#2a2e37;--accent:#83a8ff;--hover:#242832;--shadow:none}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.55 system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC","Microsoft YaHei",sans-serif}button,input{font:inherit}button{color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}
-.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:20px;padding:14px 24px;background:var(--panel);border-bottom:1px solid var(--line)}.brand{font-family:system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;font-weight:750;font-size:20px;letter-spacing:-.045em;white-space:nowrap}.search-wrap{position:relative;flex:1;max-width:760px;margin:0 auto}.search{width:100%;padding:10px 14px 10px 38px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--text);outline:none}.search:focus{border-color:var(--accent)}.search-icon{position:absolute;left:13px;top:9px;color:var(--muted);font-size:17px}
-.layout{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;max-width:1500px;margin:0 auto;padding:20px 24px}.sidebar{align-self:start;position:sticky;top:82px;height:calc(100vh - 102px);min-height:160px;overflow-y:auto;overflow-x:hidden;padding-right:5px;scrollbar-width:thin}.mode-toggle{display:block;width:44px;height:32px;flex:0 0 44px;border:1px solid var(--line);background:var(--panel);padding:0;border-radius:9px;text-align:center;margin:0 0 14px;font-weight:600;white-space:nowrap;line-height:1}.mode-toggle:hover{background:var(--hover)}.nav-item{display:block;width:100%;min-width:0;text-align:left;border:0;background:transparent;border-radius:7px;padding:7px 9px;margin:2px 0;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nav-item:hover{background:var(--hover);color:var(--text)}.nav-item.active{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);font-weight:600}.alpha-rail{display:flex;flex-direction:column;align-items:flex-start;gap:2px;max-height:calc(100vh - 160px);overflow-y:auto;scrollbar-width:none}.alpha-rail::-webkit-scrollbar{display:none}.alpha-link{width:44px;height:22px;display:grid;place-items:center;border-radius:5px;font-size:11px;color:var(--muted)}.alpha-link:hover,.alpha-link.active{background:var(--accent);color:white}.main{min-width:0}.page-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px}.page-heading h1{font-size:22px;margin:0;font-weight:700}.hint{color:var(--muted);font-size:12px}.section{scroll-margin-top:90px;margin:0 0 30px}.section-title{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:650;margin:0 0 12px}.section-title:after{content:"";height:1px;background:var(--line);flex:1}.bookmark-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}.bookmark{display:flex;align-items:center;gap:11px;min-width:0;padding:12px;border:1px solid var(--line);background:var(--panel);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s}.bookmark:hover,.folder-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}.favicon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;overflow:hidden;font-size:14px;font-weight:650;color:var(--muted)}.favicon img{width:100%;height:100%;object-fit:cover}.bookmark-copy{min-width:0}.bookmark-name{font-weight:550;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.bookmark-url{color:var(--muted);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}.folder-card{display:flex;align-items:center;gap:11px;min-width:0;min-height:58px;padding:12px;border:1px solid var(--line);background:var(--panel);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s;text-align:left}.folder-icon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;color:var(--accent);font-size:17px}.folder-card-name{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.folder-card-meta{font-size:11px;color:var(--muted);margin-top:2px}.empty{padding:40px 12px;text-align:center;color:var(--muted)}.back-link{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:var(--muted);padding:4px 0 12px}.back-link:hover{color:var(--accent)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:var(--bg) url("./background.jpg") center center / cover fixed no-repeat;color:var(--text);font:14px/1.55 system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC","Microsoft YaHei",sans-serif}body:before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(135deg,rgba(245,248,255,.42),rgba(235,241,255,.18));pointer-events:none}button,input{font:inherit}button{color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:14px;padding:14px 24px;background:color-mix(in srgb,var(--panel) 66%,transparent);backdrop-filter:blur(24px) saturate(150%);-webkit-backdrop-filter:blur(24px) saturate(150%);border-bottom:1px solid color-mix(in srgb,var(--line) 75%,transparent)}.home-button{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 34px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--panel) 65%,transparent);font-size:17px}.home-button:hover{background:var(--hover)}.brand{font-family:system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;font-weight:750;font-size:20px;letter-spacing:-.045em;white-space:nowrap}.search-wrap{position:relative;flex:1;max-width:760px;margin:0 auto}.search{width:100%;padding:10px 14px 10px 38px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--text);outline:none}.search:focus{border-color:var(--accent)}.search-icon{position:absolute;left:13px;top:9px;color:var(--muted);font-size:17px}
+.layout{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;max-width:1500px;margin:0 auto;padding:20px 24px}.sidebar{background:color-mix(in srgb,var(--panel) 42%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid color-mix(in srgb,var(--line) 65%,transparent);border-radius:16px;padding:12px}.main{background:color-mix(in srgb,var(--panel) 38%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid color-mix(in srgb,var(--line) 65%,transparent);border-radius:18px;padding:18px;min-height:calc(100vh - 130px)}.sidebar{align-self:start;position:sticky;top:82px;height:calc(100vh - 102px);min-height:160px;overflow-y:auto;overflow-x:hidden;padding-right:5px;scrollbar-width:thin}.mode-toggle{display:block;width:44px;height:32px;flex:0 0 44px;border:1px solid var(--line);background:var(--panel);padding:0;border-radius:9px;text-align:center;margin:0 0 14px;font-weight:600;white-space:nowrap;line-height:1}.mode-toggle:hover{background:var(--hover)}.nav-item{display:block;width:100%;min-width:0;text-align:left;border:0;background:transparent;border-radius:7px;padding:7px 9px;margin:2px 0;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nav-item:hover{background:var(--hover);color:var(--text)}.nav-item.active{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);font-weight:600}.alpha-rail{display:flex;flex-direction:column;align-items:flex-start;gap:2px;max-height:calc(100vh - 160px);overflow-y:auto;scrollbar-width:none}.alpha-rail::-webkit-scrollbar{display:none}.alpha-link{width:44px;height:22px;display:grid;place-items:center;border-radius:5px;font-size:11px;color:var(--muted)}.alpha-link:hover,.alpha-link.active{background:var(--accent);color:white}.main{min-width:0}.page-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px}.page-heading{display:none!important}.page-heading h1{font-size:22px;margin:0;font-weight:700}.hint{color:var(--muted);font-size:12px}.section{scroll-margin-top:90px;margin:0 0 30px}.section-title{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:650;margin:0 0 12px}.section-title:after{content:"";height:1px;background:var(--line);flex:1}.bookmark-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}.bookmark{display:flex;align-items:center;gap:11px;min-width:0;padding:12px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 66%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s}.bookmark:hover,.folder-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}.favicon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;overflow:hidden;font-size:14px;font-weight:650;color:var(--muted)}.favicon img{width:100%;height:100%;object-fit:cover}.bookmark-copy{min-width:0}.bookmark-name{font-weight:550;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.bookmark-url{color:var(--muted);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}.folder-card{display:flex;align-items:center;gap:11px;min-width:0;min-height:58px;padding:12px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 66%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s;text-align:left}.folder-icon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;color:var(--accent);font-size:17px}.folder-card-name{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.folder-card-meta{font-size:11px;color:var(--muted);margin-top:2px}.empty{padding:40px 12px;text-align:center;color:var(--muted)}.back-link{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:var(--muted);padding:4px 0 12px}.back-link:hover{color:var(--accent)}
 @media(max-width:700px){.topbar{padding:10px 12px;gap:12px}.brand{font-size:18px}.search{padding:9px 10px 9px 32px}.search-icon{left:10px;top:7px}.layout{grid-template-columns:112px minmax(0,1fr);gap:12px;padding:14px 10px}.sidebar{top:70px;height:calc(100vh - 84px)}.page-heading h1{font-size:19px}.bookmark-grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:8px}.bookmark,.folder-card{padding:10px;gap:8px}.favicon,.folder-icon{width:28px;height:28px;flex-basis:28px}.alpha-link{width:40px}}
-
-/* Glass + soft UI visual layer */
-:root{
-  color-scheme:light dark;
-  --bg:#e9edf5;--panel:rgba(255,255,255,.48);--text:#202638;--muted:#737d91;
-  --line:rgba(255,255,255,.72);--accent:#5878c8;--hover:rgba(255,255,255,.52);
-  --shadow:8px 10px 26px rgba(70,83,115,.10),-7px -7px 22px rgba(255,255,255,.58);
-  --glass-border:rgba(255,255,255,.62);--input-bg:rgba(255,255,255,.42);
-}
-body{
-  min-height:100vh;
-  background:
-    radial-gradient(ellipse at 12% 5%,rgba(179,205,255,.78) 0,rgba(179,205,255,0) 36%),
-    radial-gradient(ellipse at 87% 16%,rgba(224,197,255,.56) 0,rgba(224,197,255,0) 32%),
-    radial-gradient(ellipse at 72% 92%,rgba(173,220,218,.46) 0,rgba(173,220,218,0) 35%),
-    linear-gradient(135deg,#edf1f8 0%,#e7ebf4 48%,#f0edf6 100%);
-  background-attachment:fixed;
-}
-.topbar{
-  background:rgba(247,249,255,.60);border-bottom:1px solid rgba(255,255,255,.72);
-  box-shadow:0 8px 28px rgba(66,78,109,.06);backdrop-filter:blur(26px) saturate(155%);
-  -webkit-backdrop-filter:blur(26px) saturate(155%);
-}
-.brand{letter-spacing:-.055em;font-weight:760;color:#252d43}
-.search{
-  background:rgba(255,255,255,.44);border:1px solid rgba(255,255,255,.82);border-radius:14px;
-  box-shadow:inset 2px 2px 5px rgba(75,88,121,.06),inset -2px -2px 5px rgba(255,255,255,.52);
-  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:border-color .18s,box-shadow .18s,background .18s;
-}
-.search:focus{background:rgba(255,255,255,.68);border-color:rgba(104,133,204,.56);box-shadow:0 0 0 3px rgba(104,133,204,.10),inset 1px 1px 3px rgba(75,88,121,.04)}
-.search-icon{top:8px}
-.layout{gap:24px;padding-top:24px}
-.sidebar{
-  padding:12px 9px 12px 8px;border:1px solid rgba(255,255,255,.58);border-radius:20px;
-  background:rgba(248,250,255,.38);box-shadow:7px 8px 22px rgba(74,86,119,.08),-5px -5px 18px rgba(255,255,255,.36);
-  backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%);
-}
-.mode-toggle{
-  border:1px solid rgba(255,255,255,.9);border-radius:11px;background:rgba(255,255,255,.46);
-  box-shadow:3px 3px 8px rgba(72,84,115,.09),-3px -3px 8px rgba(255,255,255,.65);
-  transition:box-shadow .16s,transform .16s,background .16s;color:#53617d;
-}
-.mode-toggle:hover{background:rgba(255,255,255,.72);transform:translateY(-1px)}
-.mode-toggle:active{box-shadow:inset 2px 2px 5px rgba(72,84,115,.12),inset -2px -2px 5px rgba(255,255,255,.62);transform:translateY(0)}
-.nav-item{border-radius:10px;padding:8px 9px;transition:background .16s,color .16s}
-.nav-item:hover{background:rgba(255,255,255,.50)}
-.nav-item.active{background:rgba(255,255,255,.68);color:#4f6eb7;box-shadow:inset 2px 2px 5px rgba(72,84,115,.07),inset -2px -2px 5px rgba(255,255,255,.72);font-weight:650}
-.alpha-link{transition:background .15s,color .15s}
-.alpha-link:hover{background:rgba(255,255,255,.65);color:#4f6eb7}
-.alpha-link.active{background:rgba(87,119,194,.88);color:white;box-shadow:0 3px 8px rgba(67,92,157,.2)}
-.page-heading{margin-bottom:20px}.page-heading h1{font-weight:720;letter-spacing:-.035em;color:#283149}
-.section-title{letter-spacing:-.015em}.section-title:after{background:linear-gradient(90deg,rgba(135,150,182,.30),transparent)}
-.bookmark,.folder-card{
-  position:relative;overflow:hidden;background:rgba(255,255,255,.47);border:1px solid rgba(255,255,255,.76);
-  border-radius:16px;box-shadow:5px 6px 17px rgba(68,81,113,.075),-4px -4px 13px rgba(255,255,255,.45);
-  backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);
-  transition:transform .18s,border-color .18s,background .18s,box-shadow .18s;
-}
-.bookmark:before,.folder-card:before{content:"";position:absolute;inset:0 0 auto;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.9),rgba(255,255,255,0));pointer-events:none}
-.bookmark:hover,.folder-card:hover{transform:translateY(-2px);background:rgba(255,255,255,.70);border-color:rgba(255,255,255,.95);box-shadow:8px 10px 22px rgba(68,81,113,.10),-3px -3px 12px rgba(255,255,255,.52)}
-.favicon,.folder-icon{border:1px solid rgba(255,255,255,.76);background:rgba(229,235,247,.70);border-radius:11px;box-shadow:inset 1px 1px 3px rgba(72,84,115,.05),2px 2px 5px rgba(72,84,115,.045)}
-.bookmark-name,.folder-card-name{letter-spacing:-.01em}
-.bookmark-url{color:#7c8497}
-.empty{border:1px solid rgba(255,255,255,.56);border-radius:18px;background:rgba(255,255,255,.30);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
-.back-link{border-radius:9px;transition:color .15s,background .15s}.back-link:hover{background:rgba(255,255,255,.38)}
-@media(prefers-color-scheme:dark){
-  :root{--bg:#171b27;--panel:rgba(28,33,47,.62);--text:#edf0fa;--muted:#a0a9bf;--line:rgba(255,255,255,.10);--accent:#a4baff;--hover:rgba(255,255,255,.08);--shadow:7px 8px 22px rgba(0,0,0,.20),-4px -4px 16px rgba(255,255,255,.018);--glass-border:rgba(255,255,255,.12);--input-bg:rgba(255,255,255,.05)}
-  body{background:radial-gradient(ellipse at 12% 4%,rgba(57,79,133,.42) 0,transparent 38%),radial-gradient(ellipse at 88% 18%,rgba(100,67,125,.28) 0,transparent 33%),radial-gradient(ellipse at 70% 94%,rgba(39,103,105,.22) 0,transparent 35%),linear-gradient(135deg,#171b27,#1c2030 55%,#211d2c);background-attachment:fixed}
-  .topbar{background:rgba(24,28,41,.64);border-bottom-color:rgba(255,255,255,.10);box-shadow:0 8px 28px rgba(0,0,0,.10)}
-  .brand,.page-heading h1{color:#f0f2fb}
-  .search{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.12);box-shadow:inset 2px 2px 5px rgba(0,0,0,.12),inset -2px -2px 5px rgba(255,255,255,.018)}
-  .search:focus{background:rgba(255,255,255,.085);border-color:rgba(164,186,255,.55);box-shadow:0 0 0 3px rgba(130,158,232,.12)}
-  .sidebar{background:rgba(29,34,49,.52);border-color:rgba(255,255,255,.10);box-shadow:7px 8px 22px rgba(0,0,0,.14),-4px -4px 18px rgba(255,255,255,.012)}
-  .mode-toggle{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.12);color:#c3cde5;box-shadow:3px 3px 8px rgba(0,0,0,.15),-3px -3px 8px rgba(255,255,255,.018)}
-  .mode-toggle:hover{background:rgba(255,255,255,.10)}.mode-toggle:active{box-shadow:inset 2px 2px 5px rgba(0,0,0,.22),inset -2px -2px 5px rgba(255,255,255,.02)}
-  .nav-item:hover{background:rgba(255,255,255,.06)}.nav-item.active{background:rgba(164,186,255,.12);color:#b8c9ff;box-shadow:inset 2px 2px 5px rgba(0,0,0,.12),inset -2px -2px 5px rgba(255,255,255,.018)}
-  .alpha-link:hover{background:rgba(255,255,255,.09);color:#c6d2ff}.alpha-link.active{background:rgba(117,146,220,.82);color:#fff}
-  .section-title:after{background:linear-gradient(90deg,rgba(177,190,221,.24),transparent)}
-  .bookmark,.folder-card{background:rgba(31,36,52,.53);border-color:rgba(255,255,255,.11);box-shadow:5px 6px 17px rgba(0,0,0,.14),-4px -4px 13px rgba(255,255,255,.018)}
-  .bookmark:before,.folder-card:before{background:linear-gradient(90deg,rgba(255,255,255,.14),transparent)}
-  .bookmark:hover,.folder-card:hover{background:rgba(43,49,69,.78);border-color:rgba(164,186,255,.28);box-shadow:8px 10px 22px rgba(0,0,0,.20),-3px -3px 12px rgba(255,255,255,.018)}
-  .favicon,.folder-icon{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.11);box-shadow:inset 1px 1px 3px rgba(0,0,0,.12),2px 2px 5px rgba(0,0,0,.08)}
-  .bookmark-url{color:#a0a9bf}.empty{background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.08)}.back-link:hover{background:rgba(255,255,255,.06)}
-}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
-@media(max-width:700px){.layout{gap:12px}.sidebar{border-radius:16px;padding:10px 6px}.bookmark,.folder-card{border-radius:13px}}
-
 </style>
 </head>
 <body>
-<header class="topbar"><div class="brand">書籤</div><div class="search-wrap"><span class="search-icon">⌕</span><input id="search" class="search" type="search" placeholder="搜索网站名称或网址…" autocomplete="off"></div></header>
+<header class="topbar"><button id="homeButton" class="home-button" type="button" title="返回主页" aria-label="返回主页">⌂</button><div class="brand">书签（iBookmarks）</div><div class="search-wrap"><span class="search-icon">⌕</span><input id="search" class="search" type="search" placeholder="搜索网站名称或网址…" autocomplete="off"></div></header>
 <div id="layout" class="layout"><aside id="sidebar" class="sidebar"></aside><main class="main"><div class="page-heading"><h1 id="pageTitle">書籤</h1><span id="resultHint" class="hint"></span></div><div id="content"><div class="empty">正在加载书签…</div></div></main></div>
 <script>
 const DATA_URL='./bookmarks.json';
@@ -122,11 +35,12 @@ function makeFolderTree(){const root={name:'',path:'',children:new Map(),bookmar
 function findFolder(path){if(!path)return makeFolderTree();let node=makeFolderTree();for(const part of path.split(' / ')){node=node.children.get(part);if(!node)return null}return node}
 function sortedChildren(node){return [...node.children.values()].sort((a,b)=>a.name.localeCompare(b.name,'zh-CN'))}
 function renderSidebar(){const side=$('sidebar');if(mode==='alpha'){side.innerHTML=`<button id="modeToggle" class="mode-toggle" type="button" aria-label="切换到标签模式">标签</button><nav class="alpha-rail" aria-label="字母索引">${[...ALPHABET,'#'].map(l=>`<a class="alpha-link" href="#alpha-${l}" data-letter="${l}">${l}</a>`).join('')}</nav>`;side.querySelectorAll('.alpha-link').forEach(a=>a.addEventListener('click',()=>{side.querySelectorAll('.alpha-link').forEach(x=>x.classList.remove('active'));a.classList.add('active')}))}else{const roots=sortedChildren(makeFolderTree());side.innerHTML=`<button id="modeToggle" class="mode-toggle" type="button" aria-label="切换到字母模式">字母</button>${roots.map(node=>`<button class="nav-item ${selectedFolder===node.path?'active':''}" type="button" data-root-folder="${escapeHTML(node.path)}" title="${escapeHTML(node.name)}">${escapeHTML(node.name)}</button>`).join('')}`;side.querySelectorAll('[data-root-folder]').forEach(el=>el.onclick=()=>{selectedFolder=el.dataset.rootFolder;render()})}$('modeToggle').addEventListener('click',()=>{mode=mode==='alpha'?'tags':'alpha';selectedFolder='';render()})}
-function folderCard(node){return `<button class="folder-card" type="button" data-open-folder="${escapeHTML(node.path)}" title="进入 ${escapeHTML(node.path)}"><span class="folder-icon">▰</span><span class="bookmark-copy"><span class="folder-card-name">${escapeHTML(node.name)}</span></span></button>`}
+function folderCard(node){return `<button class="folder-card" type="button" data-open-folder="${escapeHTML(node.path)}" title="进入 ${escapeHTML(node.path)}"><span class="folder-icon">✡</span><span class="bookmark-copy"><span class="folder-card-name">${escapeHTML(node.name)}</span></span></button>`}
 function render(){const q=$('search').value.trim().toLowerCase();renderSidebar();$('resultHint').textContent='';const content=$('content');if(mode==='alpha'){let items=bookmarks.filter(b=>matchesSearch(b,q));if(!items.length){$('pageTitle').textContent=q?'搜索结果':'按字母浏览';content.innerHTML='<div class="empty">没有找到匹配的书签</div>';return}const groups=grouped(items,b=>firstLetter(b));const keys=[...groups.keys()].sort((a,b)=>a==='#'?1:b==='#'?-1:a.localeCompare(b));$('pageTitle').textContent=q?'搜索结果':'按字母浏览';content.innerHTML=keys.map(k=>`<section class="section" id="alpha-${k}"><h2 class="section-title">${escapeHTML(k)}</h2><div class="bookmark-grid">${groups.get(k).sort((a,b)=>(a.name||'').localeCompare(b.name||'','zh-CN')).map(card).join('')}</div></section>`).join('');return}
 let node=findFolder(selectedFolder);if(!node){selectedFolder='';node=makeFolderTree()}let items=node.bookmarks.filter(b=>matchesSearch(b,q));const children=sortedChildren(node);if(q){items=bookmarks.filter(b=>matchesSearch(b,q));$('pageTitle').textContent='搜索结果';content.innerHTML=items.length?`<div class="bookmark-grid">${items.sort((a,b)=>(a.name||'').localeCompare(b.name||'','zh-CN')).map(card).join('')}</div>`:'<div class="empty">没有找到匹配的书签</div>';return}
 $('pageTitle').textContent=selectedFolder?node.name:'書籤';let html='';if(selectedFolder){const parent=selectedFolder.includes(' / ')?selectedFolder.split(' / ').slice(0,-1).join(' / '):'';html+=`<button class="back-link" type="button" data-back="${escapeHTML(parent)}">← 返回上一级</button>`}const cards=[...children.map(folderCard),...items.sort((a,b)=>(a.name||'').localeCompare(b.name||'','zh-CN')).map(card)];content.innerHTML=cards.length?html+`<div class="bookmark-grid">${cards.join('')}</div>`:html+'<div class="empty">这个文件夹里没有书签或子文件夹</div>';content.querySelectorAll('[data-open-folder]').forEach(el=>el.onclick=()=>{selectedFolder=el.dataset.openFolder;render()});content.querySelector('[data-back]')?.addEventListener('click',el=>{selectedFolder=el.currentTarget.dataset.back;render()})}
 $('search').addEventListener('input',render);
+$('homeButton').addEventListener('click',()=>{mode='tags';selectedFolder='';$('search').value='';window.scrollTo({top:0,behavior:'smooth'});render()});
 fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('无法读取 bookmarks.json');return r.json()}).then(data=>{bookmarks=Array.isArray(data)?data:(Array.isArray(data.bookmarks)?data.bookmarks:[]);bookmarks=bookmarks.filter(b=>b&&b.url);render()}).catch(err=>{$('content').innerHTML='<div class="empty">无法加载 bookmarks.json。请确认它与 index.html 位于同一目录，且 JSON 格式正确。</div>';console.error(err)});
 </script>
 </body>
