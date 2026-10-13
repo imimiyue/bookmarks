@@ -7,41 +7,414 @@
 <style>
 :root{color-scheme:light dark;--bg:#f6f7f9;--panel:#fff;--text:#20242b;--muted:#7b818b;--line:#e8eaee;--accent:#4778e8;--hover:#f0f3f8;--shadow:0 2px 12px #17203308}
 @media(prefers-color-scheme:dark){:root{--bg:#111318;--panel:#191c22;--text:#edf0f5;--muted:#9ba2ad;--line:#2a2e37;--accent:#83a8ff;--hover:#242832;--shadow:none}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:var(--bg) url("./background.jpg") center center / cover fixed no-repeat;color:var(--text);font:14px/1.55 system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC","Microsoft YaHei",sans-serif}body:before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(135deg,rgba(245,248,255,.42),rgba(235,241,255,.18));pointer-events:none}button,input{font:inherit}button{color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}
-.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:14px;padding:14px 24px;background:color-mix(in srgb,var(--panel) 66%,transparent);backdrop-filter:blur(24px) saturate(150%);-webkit-backdrop-filter:blur(24px) saturate(150%);border-bottom:1px solid color-mix(in srgb,var(--line) 75%,transparent)}.home-button{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 34px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--panel) 65%,transparent);font-size:17px}.home-button:hover{background:var(--hover)}.brand{font-family:system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;font-weight:750;font-size:20px;letter-spacing:-.045em;white-space:nowrap}.search-wrap{position:relative;flex:1;max-width:760px;margin:0 auto}.search{width:100%;padding:10px 14px 10px 38px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--text);outline:none}.search:focus{border-color:var(--accent)}.search-icon{position:absolute;left:13px;top:9px;color:var(--muted);font-size:17px}
-.layout{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;max-width:1500px;margin:0 auto;padding:20px 24px}.sidebar{background:color-mix(in srgb,var(--panel) 42%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid color-mix(in srgb,var(--line) 65%,transparent);border-radius:16px;padding:12px}.main{background:color-mix(in srgb,var(--panel) 38%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid color-mix(in srgb,var(--line) 65%,transparent);border-radius:18px;padding:18px;min-height:calc(100vh - 130px)}.sidebar{align-self:start;position:sticky;top:82px;height:calc(100vh - 102px);min-height:160px;overflow-y:auto;overflow-x:hidden;padding-right:5px;scrollbar-width:thin}.mode-toggle{display:block;width:44px;height:32px;flex:0 0 44px;border:1px solid var(--line);background:var(--panel);padding:0;border-radius:9px;text-align:center;margin:0 0 14px;font-weight:600;white-space:nowrap;line-height:1}.mode-toggle:hover{background:var(--hover)}.nav-item{display:block;width:100%;min-width:0;text-align:left;border:0;background:transparent;border-radius:7px;padding:7px 9px;margin:2px 0;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nav-item:hover{background:var(--hover);color:var(--text)}.nav-item.active{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);font-weight:600}.alpha-rail{display:flex;flex-direction:column;align-items:flex-start;gap:2px;max-height:calc(100vh - 160px);overflow-y:auto;scrollbar-width:none}.alpha-rail::-webkit-scrollbar{display:none}.alpha-link{width:44px;height:22px;display:grid;place-items:center;border-radius:5px;font-size:11px;color:var(--muted)}.alpha-link:hover,.alpha-link.active{background:var(--accent);color:white}.main{min-width:0}.page-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 18px}.page-heading{display:none!important}.page-heading h1{font-size:22px;margin:0;font-weight:700}.hint{color:var(--muted);font-size:12px}.section{scroll-margin-top:90px;margin:0 0 30px}.section-title{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:650;margin:0 0 12px}.section-title:after{content:"";height:1px;background:var(--line);flex:1}.bookmark-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}.bookmark{display:flex;align-items:center;gap:11px;min-width:0;padding:12px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 66%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s}.bookmark:hover,.folder-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}.favicon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;overflow:hidden;font-size:14px;font-weight:650;color:var(--muted)}.favicon img{width:100%;height:100%;object-fit:cover}.bookmark-copy{min-width:0}.bookmark-name{font-weight:550;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.bookmark-url{color:var(--muted);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}.folder-card{display:flex;align-items:center;gap:11px;min-width:0;min-height:58px;padding:12px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 66%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s;text-align:left}.folder-icon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;color:var(--accent);font-size:17px}.folder-card-name{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.folder-card-meta{font-size:11px;color:var(--muted);margin-top:2px}.empty{padding:40px 12px;text-align:center;color:var(--muted)}.back-link{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:var(--muted);padding:4px 0 12px}.back-link:hover{color:var(--accent)}
-@media(max-width:700px){.topbar{padding:10px 12px;gap:12px}.brand{font-size:18px}.search{padding:9px 10px 9px 32px}.search-icon{left:10px;top:7px}.layout{grid-template-columns:112px minmax(0,1fr);gap:12px;padding:14px 10px}.sidebar{top:70px;height:calc(100vh - 84px)}.page-heading h1{font-size:19px}.bookmark-grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:8px}.bookmark,.folder-card{padding:10px;gap:8px}.favicon,.folder-icon{width:28px;height:28px;flex-basis:28px}.alpha-link{width:40px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:var(--bg) url("./background.jpg") center center / cover fixed no-repeat;color:var(--text);font:14px/1.55 system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC","Microsoft YaHei",sans-serif}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(135deg,rgba(245,248,255,.14),rgba(235,241,255,.06));pointer-events:none}
+button,input{font:inherit}
+button{color:inherit;cursor:pointer}
+a{color:inherit;text-decoration:none}
+
+/* 顶部导航栏 */
+.topbar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:14px;padding:14px 24px;background:color-mix(in srgb,var(--panel) 42%,transparent);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-bottom:1px solid color-mix(in srgb,var(--line) 75%,transparent)}
+.home-button{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;flex:0 0 34px;border:1px solid var(--line);border-radius:10px;background:color-mix(in srgb,var(--panel) 65%,transparent);font-size:17px}
+.home-button:hover{background:var(--hover)}
+.brand{font-family:system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;font-weight:750;font-size:20px;letter-spacing:-.045em;white-space:nowrap}
+.search-wrap{position:relative;flex:1;max-width:760px;margin:0 auto}
+.search{width:100%;padding:10px 14px 10px 38px;border:1px solid var(--line);border-radius:11px;background:var(--bg);color:var(--text);outline:none}
+.search:focus{border-color:var(--accent)}
+.search-icon{position:absolute;left:13px;top:9px;color:var(--muted);font-size:17px}
+
+/* 页面布局 */
+.layout{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;max-width:1500px;margin:0 auto;padding:20px 24px}
+.sidebar{background:color-mix(in srgb,var(--panel) 24%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid color-mix(in srgb,var(--line) 65%,transparent);border-radius:16px;padding:12px}
+.main{background:color-mix(in srgb,var(--panel) 12%,transparent);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);border:1px solid color-mix(in srgb,var(--line) 65%,transparent);border-radius:18px;padding:18px;min-height:calc(100vh - 130px);min-width:0}
+.sidebar{align-self:start;position:sticky;top:82px;height:calc(100vh - 102px);min-height:160px;overflow-y:auto;overflow-x:hidden;padding-right:5px;scrollbar-width:thin}
+
+/* 模式切换 */
+.mode-toggle{display:block;width:44px;height:32px;flex:0 0 44px;border:1px solid var(--line);background:var(--panel);padding:0;border-radius:9px;text-align:center;margin:0 0 14px;font-weight:600;white-space:nowrap;line-height:1}
+.mode-toggle:hover{background:var(--hover)}
+.nav-item{display:block;width:100%;min-width:0;text-align:left;border:0;background:transparent;border-radius:7px;padding:7px 9px;margin:2px 0;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-item:hover{background:var(--hover);color:var(--text)}
+.nav-item.active{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);font-weight:600}
+.alpha-rail{display:flex;flex-direction:column;align-items:flex-start;gap:2px;max-height:calc(100vh - 160px);overflow-y:auto;scrollbar-width:none}
+.alpha-rail::-webkit-scrollbar{display:none}
+.alpha-link{width:44px;height:22px;display:grid;place-items:center;border-radius:5px;font-size:11px;color:var(--muted)}
+.alpha-link:hover,.alpha-link.active{background:var(--accent);color:white}
+
+/* 隐藏右侧冗余标题 */
+.page-heading{display:none!important}
+.page-heading h1{font-size:22px;margin:0;font-weight:700}
+.hint{color:var(--muted);font-size:12px}
+
+/* 分类标题 */
+.section{scroll-margin-top:90px;margin:0 0 30px}
+.section-title{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:650;margin:0 0 12px}
+.section-title:after{content:"";height:1px;background:var(--line);flex:1}
+
+/* 书签和文件夹网格 */
+.bookmark-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+
+/* 书签卡片：降低不透明度，保留适度磨砂 */
+.bookmark{display:flex;align-items:center;gap:11px;min-width:0;padding:12px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 40%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s}
+.bookmark:hover,.folder-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.favicon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;overflow:hidden;font-size:14px;font-weight:650;color:var(--muted)}
+.favicon img{width:100%;height:100%;object-fit:cover}
+.bookmark-copy{min-width:0}
+.bookmark-name{font-weight:550;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bookmark-url{color:var(--muted);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-top:2px}
+
+/* 文件夹卡片 */
+.folder-card{display:flex;align-items:center;gap:11px;min-width:0;min-height:58px;padding:12px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 40%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:12px;box-shadow:var(--shadow);transition:transform .12s,border-color .12s;text-align:left}
+.folder-icon{width:32px;height:32px;flex:0 0 32px;border-radius:9px;background:var(--hover);display:grid;place-items:center;color:var(--accent);font-size:17px}
+.folder-card-name{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.folder-card-meta{font-size:11px;color:var(--muted)}
+.empty{padding:40px 12px;text-align:center;color:var(--muted)}
+.back-link{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:var(--muted);padding:4px 0 12px}
+.back-link:hover{color:var(--accent)}
+
+/* 移动端适配 */
+@media(max-width:700px){
+.topbar{padding:10px 12px;gap:12px}
+.brand{font-size:18px}
+.search{padding:9px 10px 9px 32px}
+.search-icon{left:10px;top:7px}
+.layout{grid-template-columns:112px minmax(0,1fr);gap:12px;padding:14px 10px}
+.sidebar{top:70px;height:calc(100vh - 84px)}
+.page-heading h1{font-size:19px}
+.bookmark-grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:8px}
+.bookmark,.folder-card{padding:10px;gap:8px}
+.favicon,.folder-icon{width:28px;height:28px;flex-basis:28px}
+.alpha-link{width:40px}
+}
 </style>
 </head>
 <body>
-<header class="topbar"><button id="homeButton" class="home-button" type="button" title="返回主页" aria-label="返回主页">⌂</button><div class="brand">书签（iBookmarks）</div><div class="search-wrap"><span class="search-icon">⌕</span><input id="search" class="search" type="search" placeholder="搜索网站名称或网址…" autocomplete="off"></div></header>
-<div id="layout" class="layout"><aside id="sidebar" class="sidebar"></aside><main class="main"><div class="page-heading"><h1 id="pageTitle">書籤</h1><span id="resultHint" class="hint"></span></div><div id="content"><div class="empty">正在加载书签…</div></div></main></div>
+<header class="topbar">
+    <button id="homeButton" class="home-button" type="button" title="返回主页" aria-label="返回主页">⌂</button>
+    <div class="brand">书签（iBookmarks）</div>
+    <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="search" class="search" type="search" placeholder="搜索网站名称或网址…" autocomplete="off">
+    </div>
+</header>
+
+<div id="layout" class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="main">
+        <div class="page-heading">
+            <h1 id="pageTitle">书签</h1>
+            <span id="resultHint" class="hint"></span>
+        </div>
+        <div id="content">
+            <div class="empty">正在加载书签…</div>
+        </div>
+    </main>
+</div>
+
 <script>
-const DATA_URL='./bookmarks.json';
-const ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-let bookmarks=[],mode='tags',selectedFolder='';
-const $=id=>document.getElementById(id);
-const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function getTags(b){let v=b.tags??b.tag??[];if(typeof v==='string')v=[v];return Array.isArray(v)?v.filter(Boolean).map(String):[]}
-function getFolders(b){let v=b.folders??b.folder??[];if(typeof v==='string')v=v.split('/').map(s=>s.trim()).filter(Boolean);if(!Array.isArray(v))return [];return v.filter(Boolean).flatMap(x=>String(x).split('/').map(s=>s.trim()).filter(Boolean))}
-function siteHost(url){try{return new URL(url).hostname.replace(/^www\./,'')}catch{return String(url||'')}}
-function firstLetter(b){const s=(b.name||siteHost(b.url)||'').trim();if(!s)return '#';const c=s[0].toUpperCase();if(/[A-Z]/.test(c))return c;const pinyin={'北':'B','百':'B','哔':'B','谷':'G','微':'W','知':'Z','搜':'S','图':'T','影':'Y','动':'D','番':'F','虎':'H','豆':'D','开':'K','网':'W','学':'X','阅':'Y','书':'S','音':'Y','视':'S','爱':'A','优':'Y','腾':'T','京':'J','淘':'T','新':'X'};return pinyin[c]||'#'}
-function folderPath(b){return getFolders(b).join(' / ')}
-function matchesSearch(b,q){return !q||(String(b.name||'').toLowerCase().includes(q)||String(b.url||'').toLowerCase().includes(q)||getTags(b).join(' ').toLowerCase().includes(q)||folderPath(b).toLowerCase().includes(q))}
-function faviconHTML(b){const host=siteHost(b.url);if(!host)return '<span>↗</span>';const src='https://www.google.com/s2/favicons?domain='+encodeURIComponent(host)+'&sz=64';return `<img src="${src}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('↗'))">`}
-function card(b){const url=String(b.url||'#');return `<a class="bookmark" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHTML(b.name||url)}"><span class="favicon">${faviconHTML(b)}</span><span class="bookmark-copy"><span class="bookmark-name">${escapeHTML(b.name||siteHost(url))}</span><span class="bookmark-url">${escapeHTML(siteHost(url))}</span></span></a>`}
-function grouped(items,keyFn){const map=new Map();for(const b of items){const k=keyFn(b);if(!map.has(k))map.set(k,[]);map.get(k).push(b)}return map}
-function makeFolderTree(){const root={name:'',path:'',children:new Map(),bookmarks:[]};for(const b of bookmarks){const fs=getFolders(b);if(!fs.length){root.bookmarks.push(b);continue}let node=root;const path=[];for(const name of fs){path.push(name);if(!node.children.has(name))node.children.set(name,{name,path:path.join(' / '),children:new Map(),bookmarks:[]});node=node.children.get(name)}node.bookmarks.push(b)}return root}
-function findFolder(path){if(!path)return makeFolderTree();let node=makeFolderTree();for(const part of path.split(' / ')){node=node.children.get(part);if(!node)return null}return node}
-function sortedChildren(node){return [...node.children.values()].sort((a,b)=>a.name.localeCompare(b.name,'zh-CN'))}
-function renderSidebar(){const side=$('sidebar');if(mode==='alpha'){side.innerHTML=`<button id="modeToggle" class="mode-toggle" type="button" aria-label="切换到标签模式">标签</button><nav class="alpha-rail" aria-label="字母索引">${[...ALPHABET,'#'].map(l=>`<a class="alpha-link" href="#alpha-${l}" data-letter="${l}">${l}</a>`).join('')}</nav>`;side.querySelectorAll('.alpha-link').forEach(a=>a.addEventListener('click',()=>{side.querySelectorAll('.alpha-link').forEach(x=>x.classList.remove('active'));a.classList.add('active')}))}else{const roots=sortedChildren(makeFolderTree());side.innerHTML=`<button id="modeToggle" class="mode-toggle" type="button" aria-label="切换到字母模式">字母</button>${roots.map(node=>`<button class="nav-item ${selectedFolder===node.path?'active':''}" type="button" data-root-folder="${escapeHTML(node.path)}" title="${escapeHTML(node.name)}">${escapeHTML(node.name)}</button>`).join('')}`;side.querySelectorAll('[data-root-folder]').forEach(el=>el.onclick=()=>{selectedFolder=el.dataset.rootFolder;render()})}$('modeToggle').addEventListener('click',()=>{mode=mode==='alpha'?'tags':'alpha';selectedFolder='';render()})}
-function folderCard(node){return `<button class="folder-card" type="button" data-open-folder="${escapeHTML(node.path)}" title="进入 ${escapeHTML(node.path)}"><span class="folder-icon">✡</span><span class="bookmark-copy"><span class="folder-card-name">${escapeHTML(node.name)}</span></span></button>`}
-function render(){const q=$('search').value.trim().toLowerCase();renderSidebar();$('resultHint').textContent='';const content=$('content');if(mode==='alpha'){let items=bookmarks.filter(b=>matchesSearch(b,q));if(!items.length){$('pageTitle').textContent=q?'搜索结果':'按字母浏览';content.innerHTML='<div class="empty">没有找到匹配的书签</div>';return}const groups=grouped(items,b=>firstLetter(b));const keys=[...groups.keys()].sort((a,b)=>a==='#'?1:b==='#'?-1:a.localeCompare(b));$('pageTitle').textContent=q?'搜索结果':'按字母浏览';content.innerHTML=keys.map(k=>`<section class="section" id="alpha-${k}"><h2 class="section-title">${escapeHTML(k)}</h2><div class="bookmark-grid">${groups.get(k).sort((a,b)=>(a.name||'').localeCompare(b.name||'','zh-CN')).map(card).join('')}</div></section>`).join('');return}
-let node=findFolder(selectedFolder);if(!node){selectedFolder='';node=makeFolderTree()}let items=node.bookmarks.filter(b=>matchesSearch(b,q));const children=sortedChildren(node);if(q){items=bookmarks.filter(b=>matchesSearch(b,q));$('pageTitle').textContent='搜索结果';content.innerHTML=items.length?`<div class="bookmark-grid">${items.sort((a,b)=>(a.name||'').localeCompare(b.name||'','zh-CN')).map(card).join('')}</div>`:'<div class="empty">没有找到匹配的书签</div>';return}
-$('pageTitle').textContent=selectedFolder?node.name:'書籤';let html='';if(selectedFolder){const parent=selectedFolder.includes(' / ')?selectedFolder.split(' / ').slice(0,-1).join(' / '):'';html+=`<button class="back-link" type="button" data-back="${escapeHTML(parent)}">← 返回上一级</button>`}const cards=[...children.map(folderCard),...items.sort((a,b)=>(a.name||'').localeCompare(b.name||'','zh-CN')).map(card)];content.innerHTML=cards.length?html+`<div class="bookmark-grid">${cards.join('')}</div>`:html+'<div class="empty">这个文件夹里没有书签或子文件夹</div>';content.querySelectorAll('[data-open-folder]').forEach(el=>el.onclick=()=>{selectedFolder=el.dataset.openFolder;render()});content.querySelector('[data-back]')?.addEventListener('click',el=>{selectedFolder=el.currentTarget.dataset.back;render()})}
-$('search').addEventListener('input',render);
-$('homeButton').addEventListener('click',()=>{mode='tags';selectedFolder='';$('search').value='';window.scrollTo({top:0,behavior:'smooth'});render()});
-fetch(DATA_URL).then(r=>{if(!r.ok)throw new Error('无法读取 bookmarks.json');return r.json()}).then(data=>{bookmarks=Array.isArray(data)?data:(Array.isArray(data.bookmarks)?data.bookmarks:[]);bookmarks=bookmarks.filter(b=>b&&b.url);render()}).catch(err=>{$('content').innerHTML='<div class="empty">无法加载 bookmarks.json。请确认它与 index.html 位于同一目录，且 JSON 格式正确。</div>';console.error(err)});
+const DATA_URL = './bookmarks.json';
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+let bookmarks = [], mode = 'tags', selectedFolder = '';
+
+const $ = id => document.getElementById(id);
+
+const escapeHTML = s => String(s ?? '').replace(/[&<>"']/g, c => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+}[c]));
+
+function getTags(b) {
+    let v = b.tags ?? b.tag ?? [];
+    if (typeof v === 'string') v = [v];
+    return Array.isArray(v) ? v.filter(Boolean).map(String) : [];
+}
+
+function getFolders(b) {
+    let v = b.folders ?? b.folder ?? [];
+    if (typeof v === 'string') v = v.split('/').map(s => s.trim()).filter(Boolean);
+    if (!Array.isArray(v)) return [];
+    return v.filter(Boolean).flatMap(x => String(x).split('/').map(s => s.trim()).filter(Boolean));
+}
+
+function siteHost(url) {
+    try {
+        return new URL(url).hostname.replace(/^www\./, '');
+    } catch {
+        return String(url || '');
+    }
+}
+
+function firstLetter(b) {
+    const s = (b.name || siteHost(b.url) || '').trim();
+    if (!s) return '#';
+    const c = s[0].toUpperCase();
+    if (/[A-Z]/.test(c)) return c;
+
+    const pinyin = {
+        '北':'B','百':'B','哔':'B','谷':'G','微':'W','知':'Z',
+        '搜':'S','图':'T','影':'Y','动':'D','番':'F','虎':'H',
+        '豆':'D','开':'K','网':'W','学':'X','阅':'Y','书':'S',
+        '音':'Y','视':'S','爱':'A','优':'Y','腾':'T','京':'J',
+        '淘':'T','新':'X'
+    };
+    return pinyin[c] || '#';
+}
+
+function folderPath(b) {
+    return getFolders(b).join(' / ');
+}
+
+function matchesSearch(b, q) {
+    return !q ||
+        String(b.name || '').toLowerCase().includes(q) ||
+        String(b.url || '').toLowerCase().includes(q) ||
+        getTags(b).join(' ').toLowerCase().includes(q) ||
+        folderPath(b).toLowerCase().includes(q);
+}
+
+function faviconHTML(b) {
+    const host = siteHost(b.url);
+    if (!host) return '<span>↗</span>';
+    const src = 'https://www.google.com/s2/favicons?domain=' + encodeURIComponent(host) + '&sz=64';
+    return `<img src="${src}" alt="" loading="lazy" onerror="this.replaceWith(document.createTextNode('↗'))">`;
+}
+
+function card(b) {
+    const url = String(b.url || '#');
+    return `<a class="bookmark" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHTML(b.name || url)}">
+        <span class="favicon">${faviconHTML(b)}</span>
+        <span class="bookmark-copy">
+            <span class="bookmark-name">${escapeHTML(b.name || siteHost(url))}</span>
+            <span class="bookmark-url">${escapeHTML(siteHost(url))}</span>
+        </span>
+    </a>`;
+}
+
+function grouped(items, keyFn) {
+    const map = new Map();
+    for (const b of items) {
+        const k = keyFn(b);
+        if (!map.has(k)) map.set(k, []);
+        map.get(k).push(b);
+    }
+    return map;
+}
+
+function makeFolderTree() {
+    const root = {name:'', path:'', children:new Map(), bookmarks:[]};
+
+    for (const b of bookmarks) {
+        const fs = getFolders(b);
+        if (!fs.length) {
+            root.bookmarks.push(b);
+            continue;
+        }
+
+        let node = root;
+        const path = [];
+
+        for (const name of fs) {
+            path.push(name);
+            if (!node.children.has(name)) {
+                node.children.set(name, {
+                    name,
+                    path: path.join(' / '),
+                    children: new Map(),
+                    bookmarks: []
+                });
+            }
+            node = node.children.get(name);
+        }
+        node.bookmarks.push(b);
+    }
+    return root;
+}
+
+function findFolder(path) {
+    if (!path) return makeFolderTree();
+
+    let node = makeFolderTree();
+    for (const part of path.split(' / ')) {
+        node = node.children.get(part);
+        if (!node) return null;
+    }
+    return node;
+}
+
+function sortedChildren(node) {
+    return [...node.children.values()].sort((a, b) => a.name.localeCompare(b.name, 'zh-CN'));
+}
+
+function renderSidebar() {
+    const side = $('sidebar');
+
+    if (mode === 'alpha') {
+        side.innerHTML = `
+            <button id="modeToggle" class="mode-toggle" type="button" aria-label="切换到标签模式">标签</button>
+            <nav class="alpha-rail" aria-label="字母索引">
+                ${[...ALPHABET, '#'].map(l => `<a class="alpha-link" href="#alpha-${l}" data-letter="${l}">${l}</a>`).join('')}
+            </nav>`;
+
+        side.querySelectorAll('.alpha-link').forEach(a => {
+            a.addEventListener('click', () => {
+                side.querySelectorAll('.alpha-link').forEach(x => x.classList.remove('active'));
+                a.classList.add('active');
+            });
+        });
+    } else {
+        const roots = sortedChildren(makeFolderTree());
+        side.innerHTML = `
+            <button id="modeToggle" class="mode-toggle" type="button" aria-label="切换到字母模式">字母</button>
+            ${roots.map(node => `
+                <button class="nav-item ${selectedFolder === node.path ? 'active' : ''}"
+                    type="button" data-root-folder="${escapeHTML(node.path)}"
+                    title="${escapeHTML(node.name)}">${escapeHTML(node.name)}</button>
+            `).join('')}`;
+
+        side.querySelectorAll('[data-root-folder]').forEach(el => {
+            el.onclick = () => {
+                selectedFolder = el.dataset.rootFolder;
+                render();
+            };
+        });
+    }
+
+    $('modeToggle').addEventListener('click', () => {
+        mode = mode === 'alpha' ? 'tags' : 'alpha';
+        selectedFolder = '';
+        render();
+    });
+}
+
+function folderCard(node) {
+    return `<button class="folder-card" type="button"
+        data-open-folder="${escapeHTML(node.path)}" title="进入 ${escapeHTML(node.path)}">
+        <span class="folder-icon">✡</span>
+        <span class="bookmark-copy">
+            <span class="folder-card-name">${escapeHTML(node.name)}</span>
+        </span>
+    </button>`;
+}
+
+function render() {
+    const q = $('search').value.trim().toLowerCase();
+    renderSidebar();
+    $('resultHint').textContent = '';
+
+    const content = $('content');
+
+    if (mode === 'alpha') {
+        const items = bookmarks.filter(b => matchesSearch(b, q));
+
+        if (!items.length) {
+            $('pageTitle').textContent = q ? '搜索结果' : '按字母浏览';
+            content.innerHTML = '<div class="empty">没有找到匹配的书签</div>';
+            return;
+        }
+
+        const groups = grouped(items, b => firstLetter(b));
+        const keys = [...groups.keys()].sort((a, b) =>
+            a === '#' ? 1 : b === '#' ? -1 : a.localeCompare(b)
+        );
+
+        $('pageTitle').textContent = q ? '搜索结果' : '按字母浏览';
+
+        content.innerHTML = keys.map(k => `
+            <section class="section" id="alpha-${k}">
+                <h2 class="section-title">${escapeHTML(k)}</h2>
+                <div class="bookmark-grid">
+                    ${groups.get(k).sort((a, b) =>
+                        (a.name || '').localeCompare(b.name || '', 'zh-CN')
+                    ).map(card).join('')}
+                </div>
+            </section>
+        `).join('');
+        return;
+    }
+
+    let node = findFolder(selectedFolder);
+    if (!node) {
+        selectedFolder = '';
+        node = makeFolderTree();
+    }
+
+    let items = node.bookmarks.filter(b => matchesSearch(b, q));
+    const children = sortedChildren(node);
+
+    if (q) {
+        items = bookmarks.filter(b => matchesSearch(b, q));
+        $('pageTitle').textContent = '搜索结果';
+
+        content.innerHTML = items.length
+            ? `<div class="bookmark-grid">${items.sort((a, b) =>
+                (a.name || '').localeCompare(b.name || '', 'zh-CN')
+            ).map(card).join('')}</div>`
+            : '<div class="empty">没有找到匹配的书签</div>';
+        return;
+    }
+
+    $('pageTitle').textContent = selectedFolder ? node.name : '书签';
+
+    let html = '';
+    if (selectedFolder) {
+        const parent = selectedFolder.includes(' / ')
+            ? selectedFolder.split(' / ').slice(0, -1).join(' / ')
+            : '';
+        html += `<button class="back-link" type="button" data-back="${escapeHTML(parent)}">← 返回上一级</button>`;
+    }
+
+    const cards = [
+        ...children.map(folderCard),
+        ...items.sort((a, b) => (a.name || '').localeCompare(b.name || '', 'zh-CN')).map(card)
+    ];
+
+    content.innerHTML = cards.length
+        ? html + `<div class="bookmark-grid">${cards.join('')}</div>`
+        : html + '<div class="empty">这个文件夹里没有书签或子文件夹</div>';
+
+    content.querySelectorAll('[data-open-folder]').forEach(el => {
+        el.onclick = () => {
+            selectedFolder = el.dataset.openFolder;
+            render();
+        };
+    });
+
+    content.querySelector('[data-back]')?.addEventListener('click', el => {
+        selectedFolder = el.currentTarget.dataset.back;
+        render();
+    });
+}
+
+$('search').addEventListener('input', render);
+
+$('homeButton').addEventListener('click', () => {
+    mode = 'tags';
+    selectedFolder = '';
+    $('search').value = '';
+    window.scrollTo({top:0, behavior:'smooth'});
+    render();
+});
+
+fetch(DATA_URL)
+    .then(r => {
+        if (!r.ok) throw new Error('无法读取 bookmarks.json');
+        return r.json();
+    })
+    .then(data => {
+        bookmarks = Array.isArray(data)
+            ? data
+            : (Array.isArray(data.bookmarks) ? data.bookmarks : []);
+        bookmarks = bookmarks.filter(b => b && b.url);
+        render();
+    })
+    .catch(err => {
+        $('content').innerHTML = '<div class="empty">无法加载 bookmarks.json。请确认它与 index.html 位于同一目录，且 JSON 格式正确。</div>';
+        console.error(err);
+    });
 </script>
 </body>
 </html>
