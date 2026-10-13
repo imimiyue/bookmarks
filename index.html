@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>相册本</title>
+<style>
+*{box-sizing:border-box}
+html,body{width:100%;height:100%;margin:0;overflow:hidden}
+body{
+  font-family:"Segoe UI","Microsoft YaHei",sans-serif;
+  background:radial-gradient(circle at 50% 45%,#40372f 0%,#211d19 48%,#0d0c0b 100%);
+  color:#eee;user-select:none
+}
+.album{width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;perspective:2200px}
+.book{
+  position:relative;width:min(94vw,1500px);height:min(90vh,920px);
+  display:flex;transform-style:preserve-3d;
+  filter:drop-shadow(0 28px 35px rgba(0,0,0,.5))
+}
+.page{
+  position:relative;width:50%;height:100%;overflow:hidden;
+  background:#f3eee4;border:1px solid rgba(70,50,30,.5)
+}
+.left{border-radius:10px 2px 2px 10px;box-shadow:inset -15px 0 25px rgba(0,0,0,.1),inset 0 0 45px rgba(120,90,50,.1)}
+.right{border-radius:2px 10px 10px 2px;box-shadow:inset 15px 0 25px rgba(0,0,0,.1),inset 0 0 45px rgba(120,90,50,.1)}
+.page:after,.sheet:after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(255,255,255,.08),transparent 15%,transparent 85%,rgba(0,0,0,.08))
+}
+.photo{
+  position:absolute;inset:5%;display:flex;align-items:center;justify-content:center;
+  background:#e7dfd2;box-shadow:0 8px 22px rgba(0,0,0,.2),0 0 0 1px rgba(100,80,55,.18);
+  overflow:hidden
+}
+.photo img{width:100%;height:100%;object-fit:contain;display:block;transition:transform .6s ease}
+.photo:hover img{transform:scale(1.015)}
+.center{
+  position:absolute;z-index:10;left:50%;top:0;width:20px;height:100%;
+  transform:translateX(-50%);pointer-events:none;
+  background:linear-gradient(90deg,rgba(0,0,0,.18),rgba(255,255,255,.13) 45%,rgba(0,0,0,.2))
+}
+.sheet{
+  position:absolute;z-index:20;top:0;width:50%;height:100%;
+  transform-style:preserve-3d;pointer-events:none;background:#f3eee4
+}
+.sheet .face{
+  position:absolute;inset:0;backface-visibility:hidden;
+  background:#f3eee4;overflow:hidden
+}
+.sheet .back{transform:rotateY(180deg)}
+.turn-right{left:50%;transform-origin:left center;animation:turnRight .85s cubic-bezier(.22,.72,.2,1) forwards}
+.turn-left{left:0;transform-origin:right center;animation:turnLeft .85s cubic-bezier(.22,.72,.2,1) forwards}
+@keyframes turnRight{
+  0%{transform:rotateY(0);box-shadow:0 0 0 transparent}
+  50%{box-shadow:-35px 0 55px rgba(0,0,0,.35)}
+  100%{transform:rotateY(-180deg);box-shadow:0 0 0 transparent}
+}
+@keyframes turnLeft{
+  0%{transform:rotateY(0);box-shadow:0 0 0 transparent}
+  50%{box-shadow:35px 0 55px rgba(0,0,0,.35)}
+  100%{transform:rotateY(180deg);box-shadow:0 0 0 transparent}
+}
+.arrow{
+  position:fixed;z-index:50;top:50%;width:54px;height:90px;
+  transform:translateY(-50%);border:0;border-radius:12px;color:white;
+  background:rgba(20,18,15,.3);backdrop-filter:blur(8px);
+  cursor:pointer;font-size:42px;line-height:1;transition:.2s
+}
+.arrow:hover{background:rgba(20,18,15,.65);transform:translateY(-50%) scale(1.06)}
+.arrow:active{transform:translateY(-50%) scale(.96)}
+.arrow:disabled{opacity:.15;cursor:default}
+.prev{left:22px}.next{right:22px}
+.info{
+  position:fixed;z-index:40;bottom:22px;left:50%;transform:translateX(-50%);
+  padding:8px 16px;border-radius:20px;background:rgba(0,0,0,.38);
+  backdrop-filter:blur(8px);font-size:14px;color:rgba(255,255,255,.85)
+}
+.hint{
+  position:fixed;z-index:40;top:20px;left:50%;transform:translateX(-50%);
+  padding:7px 14px;border-radius:16px;background:rgba(0,0,0,.25);
+  color:rgba(255,255,255,.7);font-size:13px
+}
+@media(max-width:700px){
+  .book{width:96vw;height:75vh}
+  .arrow{width:42px;height:70px;font-size:32px}
+  .prev{left:6px}.next{right:6px}
+}
+</style>
+</head>
+<body>
+<div class="album">
+  <div class="book" id="book">
+    <div class="page left"><div class="photo"><img id="leftImg"></div></div>
+    <div class="page right"><div class="photo"><img id="rightImg"></div></div>
+    <div class="center"></div>
+  </div>
+</div>
+
+<button class="arrow prev" id="prev" aria-label="上一页">‹</button>
+<button class="arrow next" id="next" aria-label="下一页">›</button>
+<div class="hint">← → 翻页　·　点击两侧按钮也可以翻页</div>
+<div class="info" id="info"></div>
+
+<script>
+const total = 16;
+let spread = 0;
+let animating = false;
+
+const leftImg = document.getElementById("leftImg");
+const rightImg = document.getElementById("rightImg");
+const book = document.getElementById("book");
+const info = document.getElementById("info");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+
+function src(n) {
+  return "images/" + n + ".jpg";
+}
+
+function render() {
+  const left = spread * 2 + 1;
+  const right = left + 1;
+  leftImg.src = src(left);
+  rightImg.src = src(right);
+  info.textContent = left + " - " + right + " / " + total;
+  prev.disabled = spread === 0;
+  next.disabled = spread === total / 2 - 1;
+}
+
+function makeSheet(direction) {
+  const sheet = document.createElement("div");
+  sheet.className = "sheet " + (direction === 1 ? "turn-right" : "turn-left");
+
+  const front = document.createElement("div");
+  front.className = "face front";
+  const back = document.createElement("div");
+  back.className = "face back";
+
+  const frontPhoto = document.createElement("div");
+  frontPhoto.className = "photo";
+  const backPhoto = document.createElement("div");
+  backPhoto.className = "photo";
+
+  const frontImg = document.createElement("img");
+  const backImg = document.createElement("img");
+
+  if (direction === 1) {
+    frontImg.src = src(spread * 2 + 2);
+    backImg.src = src(spread * 2 + 3);
+  } else {
+    frontImg.src = src(spread * 2 + 1);
+    backImg.src = src(spread * 2);
+  }
+
+  frontPhoto.appendChild(frontImg);
+  backPhoto.appendChild(backImg);
+  front.appendChild(frontPhoto);
+  back.appendChild(backPhoto);
+  sheet.appendChild(front);
+  sheet.appendChild(back);
+  book.appendChild(sheet);
+
+  setTimeout(() => sheet.remove(), 900);
+}
+
+function turn(direction) {
+  if (animating) return;
+  if (direction === 1 && spread >= total / 2 - 1) return;
+  if (direction === -1 && spread <= 0) return;
+
+  animating = true;
+
+  if (direction === 1) {
+    makeSheet(1);
+    spread++;
+  } else {
+    spread--;
+    makeSheet(-1);
+  }
+
+  render();
+
+  setTimeout(() => {
+    animating = false;
+    render();
+  }, 880);
+}
+
+prev.addEventListener("click", () => turn(-1));
+next.addEventListener("click", () => turn(1));
+
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") turn(1);
+  if (e.key === "ArrowLeft") turn(-1);
+  if (e.key === "Home") { spread = 0; render(); }
+  if (e.key === "End") { spread = total / 2 - 1; render(); }
+});
+
+let startX = null;
+document.addEventListener("pointerdown", e => startX = e.clientX);
+document.addEventListener("pointerup", e => {
+  if (startX === null) return;
+  const dx = e.clientX - startX;
+  if (Math.abs(dx) > 70) turn(dx < 0 ? 1 : -1);
+  startX = null;
+});
+
+render();
+</script>
+</body>
+</html>
