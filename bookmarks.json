@@ -63,13 +63,6 @@
     ]
   },
   {
-    "name": "洞",
-    "url": "https://treehole.pku.edu.cn/ch/web/pc/index",
-    "folders": [
-      "Favourites bar"
-    ]
-  },
-  {
     "name": "智",
     "url": "https://chatglm.cn/main/alltoolsdetail?t=1782129014891&lang=zh",
     "folders": [
@@ -92,7 +85,7 @@
   },
   {
     "name": "Notion",
-    "url": "https://app.notion.com/p/3d75b1a945ac809fa00def3beb0d5514",
+    "url": "https://app.notion.com",
     "folders": [
       "Favourites bar"
     ]
@@ -109,155 +102,6 @@
     "url": "https://x.com/i/grok",
     "folders": [
       "Favourites bar"
-    ]
-  },
-  {
-    "name": "书签",
-    "url": "https://imimiyue.github.io/bookmarks/#alpha-B",
-    "folders": [
-      "Favourites bar"
-    ]
-  },
-  {
-    "name": "tp date",
-    "url": "https://tpdate.com/?login=1",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "PKU NetDisk",
-    "url": "https://disk.pku.edu.cn/anyshare/m/en-us/login",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "北大未名BBS",
-    "url": "https://bbs.pku.edu.cn/v2/mobile/home.php",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "https://quiz.huh.moe/",
-    "url": "https://quiz.huh.moe/",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "北京大学选课",
-    "url": "https://iaaa.pku.edu.cn/iaaa/oauth.jsp?appID=syllabus&appName=%E5%AD%A6%E7%94%9F%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F&redirectUrl=http://elective.pku.edu.cn:80/elective2008/ssoLogin.do",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "闭 借书",
-    "url": "https://calling.lib.pku.edu.cn/#/login",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "北京大学医学部解剖学教研室",
-    "url": "http://anat.bjmu.edu.cn/question/questions_01.htm",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "组胚切片",
-    "url": "http://202.112.180.16/dse",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "SurviveSJTUManual",
-    "url": "https://survivesjtu.gitbook.io/survivesjtumanual",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "北医服务平台",
-    "url": "https://apps.bjmu.edu.cn/default/index.html#/",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "北大树洞",
-    "url": "https://treehole.pku.edu.cn/",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "PKU NetDisk2026",
-    "url": "https://disk.pku.edu.cn/anyshare/en-us/link/AA1AD7EAB6673943F4A0527A6D910356F0?_tb=none&expires_at=1970-01-01T08%3A00%3A00%2B08%3A00&item_type=folder&password_required=false&title=2026%E5%A4%A7%E7%A4%BC%E5%8C%85&type=anonymous&verify_mobile=false",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "portal.pku.edu.cn",
-    "url": "https://portal.pku.edu.cn/",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "PBL中心",
-    "url": "https://pbl.bjmu.edu.cn/index/index/hycktype/PBL",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "北京大学教学网",
-    "url": "https://course.pku.edu.cn/webapps/bb-social-learning-BBLEARN/execute/mybb?cmd=display&toolId=MyGradesOnMyBb_____MyGradesTool&extraParams=override_stream=mygrades",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "医学部选课",
-    "url": "https://xsxk.bjmu.edu.cn/xsxkapp/sys/xsxkapp/*default/index.do",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "北医教育处",
-    "url": "https://jiaoyuchu.bjmu.edu.cn/",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "Webvpn bjmu",
-    "url": "https://xxzx.bjmu.edu.cn/fwzn/VPNfw/Webvpn/index.htm",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "北京大学网络服务 - 首页",
-    "url": "https://its.pku.edu.cn/",
-    "folders": [
-      "pku"
     ]
   },
   {
