@@ -1,10 +1,271 @@
 [
   {
+    "name": "C",
+    "url": "https://chatgpt.com/",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "G",
+    "url": "https://gemini.google.com/app",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "G",
+    "url": "https://github.com/",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "W",
+    "url": "https://en.wikipedia.org/wiki/Main_Page",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "D",
+    "url": "https://chat.deepseek.com/",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "包",
+    "url": "https://www.doubao.com/chat/",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "z",
+    "url": "https://www.zhihu.com/",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "哔",
+    "url": "https://www.bilibili.com/",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "红",
+    "url": "https://www.xiaohongshu.com/explore",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "洞",
+    "url": "https://treehole.pku.edu.cn/ch/web/pc/index",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "智",
+    "url": "https://chatglm.cn/main/alltoolsdetail?t=1782129014891&lang=zh",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "问",
+    "url": "https://www.qianwen.com/?st=null&bizPassParams=%26x-platform%3DexternalH5",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "打字",
+    "url": "https://qwerty.kaiyi.cool/",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "Notion",
+    "url": "https://app.notion.com/p/3d75b1a945ac809fa00def3beb0d5514",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "email",
+    "url": "https://signup.live.com/signup?cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c&contextid=BA1A5DB502DC114D&opid=D26C09F2AAFD4030&bk=1789542758&sru=https://login.live.com/oauth20_authorize.srf%3fclient_id%3d9199bf20-a13f-4107-85dc-02114787ef48%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26client_id%3d9199bf20-a13f-4107-85dc-02114787ef48%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26contextid%3dBA1A5DB502DC114D%26opid%3dD26C09F2AAFD4030%26mkt%3dZH-CN%26lc%3d2052%26bk%3d1789542758%26uaid%3df71fd79408ae64a108e09f4334910234&lw=dob,flname,wld&fl=1&uiflavor=web&fluent=2&client_id=00000000487A244A&lic=1&mkt=ZH-CN&lc=2052&uaid=f71fd79408ae64a108e09f4334910234",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "Grok",
+    "url": "https://x.com/i/grok",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "书签",
+    "url": "https://imimiyue.github.io/bookmarks/#alpha-B",
+    "folders": [
+      "Favourites bar"
+    ]
+  },
+  {
+    "name": "tp date",
+    "url": "https://tpdate.com/?login=1",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "PKU NetDisk",
+    "url": "https://disk.pku.edu.cn/anyshare/m/en-us/login",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "北大未名BBS",
+    "url": "https://bbs.pku.edu.cn/v2/mobile/home.php",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "https://quiz.huh.moe/",
+    "url": "https://quiz.huh.moe/",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "北京大学选课",
+    "url": "https://iaaa.pku.edu.cn/iaaa/oauth.jsp?appID=syllabus&appName=%E5%AD%A6%E7%94%9F%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F&redirectUrl=http://elective.pku.edu.cn:80/elective2008/ssoLogin.do",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "闭 借书",
+    "url": "https://calling.lib.pku.edu.cn/#/login",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "北京大学医学部解剖学教研室",
+    "url": "http://anat.bjmu.edu.cn/question/questions_01.htm",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "组胚切片",
+    "url": "http://202.112.180.16/dse",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "SurviveSJTUManual",
+    "url": "https://survivesjtu.gitbook.io/survivesjtumanual",
+    "folders": [
+      "pku",
+      "null"
+    ]
+  },
+  {
+    "name": "北医服务平台",
+    "url": "https://apps.bjmu.edu.cn/default/index.html#/",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "北大树洞",
+    "url": "https://treehole.pku.edu.cn/",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "PKU NetDisk2026",
+    "url": "https://disk.pku.edu.cn/anyshare/en-us/link/AA1AD7EAB6673943F4A0527A6D910356F0?_tb=none&expires_at=1970-01-01T08%3A00%3A00%2B08%3A00&item_type=folder&password_required=false&title=2026%E5%A4%A7%E7%A4%BC%E5%8C%85&type=anonymous&verify_mobile=false",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "portal.pku.edu.cn",
+    "url": "https://portal.pku.edu.cn/",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "PBL中心",
+    "url": "https://pbl.bjmu.edu.cn/index/index/hycktype/PBL",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "北京大学教学网",
+    "url": "https://course.pku.edu.cn/webapps/bb-social-learning-BBLEARN/execute/mybb?cmd=display&toolId=MyGradesOnMyBb_____MyGradesTool&extraParams=override_stream=mygrades",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "医学部选课",
+    "url": "https://xsxk.bjmu.edu.cn/xsxkapp/sys/xsxkapp/*default/index.do",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "北医教育处",
+    "url": "https://jiaoyuchu.bjmu.edu.cn/",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "Webvpn bjmu",
+    "url": "https://xxzx.bjmu.edu.cn/fwzn/VPNfw/Webvpn/index.htm",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
+    "name": "北京大学网络服务 - 首页",
+    "url": "https://its.pku.edu.cn/",
+    "folders": [
+      "pku"
+    ]
+  },
+  {
     "name": "iXXX . com",
     "url": "https://www.ixxx.com/",
     "folders": [
       "infinite",
-      "search"
+      "navi"
     ]
   },
   {
@@ -12,20 +273,12 @@
     "url": "https://www.maturetube.com/pornstar/ramu-nagatsuki",
     "folders": [
       "infinite",
-      "search"
+      "navi"
     ]
   },
   {
     "name": "Porn Dude",
     "url": "https://theporndude.com/zh",
-    "folders": [
-      "infinite",
-      "navi"
-    ]
-  },
-  {
-    "name": "TGNAV",
-    "url": "https://tgnav.github.io/",
     "folders": [
       "infinite",
       "navi"
@@ -40,19 +293,11 @@
     ]
   },
   {
-    "name": "SpankBang",
-    "url": "https://spankbang.com/5uapw/video/lovely+slut+new",
-    "folders": [
-      "infinite",
-      "HD"
-    ]
-  },
-  {
     "name": "eporner",
     "url": "https://www.eporner.com/",
     "folders": [
       "infinite",
-      "HD"
+      "video"
     ]
   },
   {
@@ -64,8 +309,8 @@
     ]
   },
   {
-    "name": "18av",
-    "url": "https://18av.mm-cg.com/zh/amateurjav_content/264170/DDH-367.html",
+    "name": "18a",
+    "url": "https://mjv006.com/en/amateurjav_content/261911/DDH-367.html",
     "folders": [
       "infinite",
       "video"
@@ -80,40 +325,8 @@
     ]
   },
   {
-    "name": "pallj",
-    "url": "https://www.pallj.com/zh/?v=dC1qGuxwctV&c=teen",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
     "name": "Jable.TV",
     "url": "https://jable.tv/",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "Supjav.com ",
-    "url": "https://supjav.com/zh/?s=%E7%9C%BC%E9%95%9C",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "Rusvideos.com",
-    "url": "https://rusvideos.com/",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "prostoporno",
-    "url": "https://m.prostoporno.onl/video/",
     "folders": [
       "infinite",
       "video"
@@ -128,7 +341,7 @@
     ]
   },
   {
-    "name": "sexbjcam",
+    "name": "korea直播",
     "url": "https://sexbjcam.com/",
     "folders": [
       "infinite",
@@ -136,64 +349,8 @@
     ]
   },
   {
-    "name": "Free Porn Videos",
-    "url": "https://www.youporn.com/",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "rusvideos",
-    "url": "https://rusvideos.com/rolik/byvshuyu-traxayu-tolko-v-prezervative-syurprizov-mne-ne-nuzhno.html",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "prostoporno",
-    "url": "https://m.prostoporno.onl/videos/starshekursnik-trahaet-blondinku",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "watch-porn.net",
-    "url": "https://www.watch-porn.net/horny-stepmom-catches-stepson-masturbating-helps-to-cum-baQSRVFpxCM/",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "palln",
-    "url": "https://www.palln.com/zh/",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "pornushka.me",
-    "url": "https://pornushka.me/",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "russ",
-    "url": "https://www.lookxz.com/zh/?video=g9NchAA4QYn&category=babes",
-    "folders": [
-      "infinite",
-      "video"
-    ]
-  },
-  {
-    "name": "Tube8",
-    "url": "https://www.tube8.com/",
+    "name": "SpankBang",
+    "url": "https://spankbang.com/5uapw/video/lovely+slut+new",
     "folders": [
       "infinite",
       "video"
@@ -208,6 +365,38 @@
     ]
   },
   {
+    "name": "youPorn Videos",
+    "url": "https://www.youporn.com/",
+    "folders": [
+      "infinite",
+      "video"
+    ]
+  },
+  {
+    "name": "Tube8",
+    "url": "https://www.tube8.com/",
+    "folders": [
+      "infinite",
+      "video"
+    ]
+  },
+  {
+    "name": "watch-porn",
+    "url": "https://www.watch-porn.net/horny-stepmom-catches-stepson-masturbating-helps-to-cum-baQSRVFpxCM/",
+    "folders": [
+      "infinite",
+      "video"
+    ]
+  },
+  {
+    "name": "allp",
+    "url": "https://www.palln.com/zh/",
+    "folders": [
+      "infinite",
+      "video"
+    ]
+  },
+  {
     "name": "YESPORN",
     "url": "https://yesporn.vip/",
     "folders": [
@@ -216,110 +405,51 @@
     ]
   },
   {
-    "name": "hdporncomics",
-    "url": "https://hdporncomics.com/",
+    "name": "russ",
+    "url": "https://pornushka.me/",
     "folders": [
       "infinite",
-      "manga",
-      "unyu"
+      "video"
     ]
   },
   {
-    "name": "E-Hentai",
-    "url": "https://e-hentai.org/",
+    "name": "russ",
+    "url": "https://m.prostoporno.onl/videos/starshekursnik-trahaet-blondinku",
     "folders": [
       "infinite",
-      "manga",
-      "unyu"
+      "video"
     ]
   },
   {
-    "name": "PHOTOS - Search Results For '哆啦A梦' - 禁漫天堂",
-    "url": "https://18comic.vip/search/photos?search_query=%E5%93%86%E5%95%A6A%E5%A4%A2&o=mp",
+    "name": "pallj",
+    "url": "https://www.pallj.com/zh/?v=dC1qGuxwctV&c=teen",
     "folders": [
       "infinite",
-      "manga",
-      "unyu"
+      "video"
     ]
   },
   {
-    "name": "色漫天堂 - 韩漫日漫18岁禁漫",
-    "url": "https://smtt6.com/",
+    "name": "Rusvideos.com",
+    "url": "https://rusvideos.com/",
     "folders": [
       "infinite",
-      "manga"
+      "video"
     ]
   },
   {
-    "name": "最新漫畫 - 18禁韓漫天堂",
-    "url": "https://18jin.org/",
+    "name": "Kyaa Chimeras",
+    "url": "https://www.lookxz.com/zh/?video=g9NchAA4QYn&category=babes",
     "folders": [
       "infinite",
-      "manga"
+      "video"
     ]
   },
   {
-    "name": "【见人就打】屌啦A梦之触摸任意门01-03 ITsACG,itsacg 漫画,itsacg.com,itsacg官网,紳士泛漫畫,全網最新最全的線上,同人誌,雜誌單篇,單行本 _ Powered by src1.itsacg.com !",
-    "url": "https://www.itsacg.com/plugin.php?id=jameson_manhua&a=read&zjid=432482&nopage=1",
+    "name": "Top 2026 Asian Porn Videos & Amateur Sex Clips | Xasiat",
+    "url": "https://www.xasiat.com/",
     "folders": [
       "infinite",
-      "manga"
-    ]
-  },
-  {
-    "name": "搜索：苍穹 - 紳士漫畫移動版-專注分享漢化本子",
-    "url": "https://wnacg.com/q/?q=%E8%8B%8D%E7%A9%B9&f=_all&s=create_time_DESC&syn=yes",
-    "folders": [
-      "infinite",
-      "manga"
-    ]
-  },
-  {
-    "name": "177漫畫",
-    "url": "https://www.177picyy.com/",
-    "folders": [
-      "infinite",
-      "manga"
-    ]
-  },
-  {
-    "name": "禁漫天堂 | 黄漫,成人漫画,H动漫,日韩色情漫画,18禁动漫,18mh.net",
-    "url": "https://asset.azucyfo.com/comic",
-    "folders": [
-      "infinite",
-      "manga"
-    ]
-  },
-  {
-    "name": "最新韩漫 Comics - 禁漫天堂",
-    "url": "https://18comic.vip/albums/hanman",
-    "folders": [
-      "infinite",
-      "manga"
-    ]
-  },
-  {
-    "name": "里番|全彩工口漫画|同人H漫画大全 - ACG漫画网 【第1页】",
-    "url": "https://www.acgxmh.com/",
-    "folders": [
-      "infinite",
-      "manga"
-    ]
-  },
-  {
-    "name": "漫小肆韓漫-92韩漫最新地址-顶通免费地址-玩漫最快更新-顶通破解版-歪歪漫画最新地址-桃桃漫画无删减-美丽新世界最新话-秘密教学最新话-Toptoon破解-ikanmh最新地址",
-    "url": "https://www.jjmhw2.top/",
-    "folders": [
-      "infinite",
-      "manga"
-    ]
-  },
-  {
-    "name": "Browse :: Sukebei",
-    "url": "https://sukebei.nyaa.si/",
-    "folders": [
-      "infinite",
-      "manga"
+      "video"
     ]
   },
   {
@@ -333,14 +463,6 @@
   {
     "name": "Watch Hentai Stream Online in Hentai.tv Right Now!",
     "url": "https://hentai.tv/",
-    "folders": [
-      "infinite",
-      "anime"
-    ]
-  },
-  {
-    "name": "Anime1.in 動畫線上看 – 上千部動漫免費線上看！",
-    "url": "https://anime1.in/",
     "folders": [
       "infinite",
       "anime"
@@ -459,6 +581,318 @@
     ]
   },
   {
+    "name": "禁漫天堂",
+    "url": "https://18comic.vip/albums/hanman",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "hanimeone.me/comics",
+    "url": "https://hanimeone.me/comics",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "3Hentai - Free Hentai Manga & Doujins XXX",
+    "url": "https://3hentai.net/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "nhentai - Hentai Manga & Doujinshi",
+    "url": "https://nhentai.xxx/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "nhentai : Free Hentai Manga, Doujinshi and Comics Online!",
+    "url": "https://nhentai.to/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "nHentai: Free Hentai Manga, Doujinshi and Comics Online!",
+    "url": "https://nhentai.com/en/hentai-comics",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "HD Porn Comics",
+    "url": "https://hdporncomics.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "E-Hentai Galleries - The Free Hentai Doujinshi, Manga and Image Gallery System",
+    "url": "https://e-hentai.org/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "色漫天堂",
+    "url": "https://smtt6.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "18禁韓漫天堂",
+    "url": "https://18jin.org/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "itsacg 漫画",
+    "url": "https://www.itsacg.com/plugin.php?id=jameson_manhua&a=read&zjid=432482&nopage=1",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "紳士漫畫移動版",
+    "url": "https://wnacg.com/q/?q=%E8%8B%8D%E7%A9%B9&f=_all&s=create_time_DESC&syn=yes",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "177漫畫",
+    "url": "https://www.177picyy.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "禁漫",
+    "url": "https://asset.azucyfo.com/comic",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "ACG漫画网",
+    "url": "https://www.acgxmh.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "漫小肆韓漫",
+    "url": "https://www.jjmhw2.top/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "All Porn Comics",
+    "url": "https://allporncomics.co/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "AsmHentai - Free Hentai Manga and Doujinshi Reader",
+    "url": "https://asmhentai.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Comics Valley",
+    "url": "https://comicsvalley.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Danbooru: Anime Image Board",
+    "url": "https://danbooru.donmai.us/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "HDoujin Galleries - Free Hentai Manga and Doujinshi Online Reader",
+    "url": "https://hdoujin.org/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "HentaiEnvy - Hentai Manga, Comic Porn & Doujinshi",
+    "url": "https://hentaienvy.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Welcome | Kemono",
+    "url": "https://kemono.cr/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Hentai Manga, Doujins, and Comics - Luscious",
+    "url": "https://www.luscious.net/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Home - Uncensored Manhwa | MangaCrazy Free Adult Manhwa",
+    "url": "https://mangacrazy.net/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Pawchive",
+    "url": "https://pawchive.pw/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Roku Hentai",
+    "url": "https://rokuhentai.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Schale Network - Free Hentai Manga and Doujinshi Online Reader",
+    "url": "https://niyaniya.moe/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Posts Index - Yabai!",
+    "url": "https://yabai.si/g",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "请稍候…",
+    "url": "https://myreadingmanga.info/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "Free Hentai Manga, Doujins, XXX & Anime Porn - Simply Hentai",
+    "url": "https://www.simply-hentai.com/web3",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "日本漫画连载大全,东京食尸鬼re百度云,进击的巨人,七原罪第二季,政宗君的复仇本子动漫 - 92漫画网",
+    "url": "https://h5.92mh.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "色漫網 - 免費H漫, 精品A漫，禁漫天堂",
+    "url": "https://www.cartoon18.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "H-Comic - 免費成人漫畫、全彩中文h漫、過萬本分類漫畫線上閱讀",
+    "url": "https://h-comic.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "JComic - 歡迎光臨 JComic.net",
+    "url": "https://jcomic.net/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "manhuabika.com",
+    "url": "https://manhuabika.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "bakamh巴卡漫画 – 海量最新韩漫免费观看",
+    "url": "https://bakamh.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "绅士会所",
+    "url": "https://www.hentaiclub.net/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
+    "name": "肉漫屋-漫畫吧,漫畫大全,韓漫,肉漫免費在線觀看",
+    "url": "https://rouman5.com/",
+    "folders": [
+      "infinite",
+      "manga"
+    ]
+  },
+  {
     "name": "Coser@一小央泽 (yixiaoyangze) 家教老师 | Căng Cực",
     "url": "https://cangcuc.com/anh-dep-gai-xinh/coser-at-yixiaoyangze-66/",
     "folders": [
@@ -515,332 +949,374 @@
     ]
   },
   {
-    "name": "北京大学",
-    "url": "https://www.pku.edu.cn/visit.html#p3",
+    "name": "4KHD",
+    "url": "https://www.4khd.com/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "北医服务平台",
-    "url": "https://apps.bjmu.edu.cn/default/index.html#/",
+    "name": "3600000 Beauty – 3600000 Beauty Photography",
+    "url": "https://3600000.xyz/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "北京大学教学网",
-    "url": "https://course.pku.edu.cn/webapps/bb-social-learning-BBLEARN/execute/mybb?cmd=display&toolId=MyGradesOnMyBb_____MyGradesTool&extraParams=override_stream=mygrades",
+    "name": "akuma.moe — abandon all hope",
+    "url": "https://akuma.moe/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "北京大学网络服务 - 首页",
-    "url": "https://its.pku.edu.cn/",
+    "name": "Chinese, Korean, sexy, hot, nude girl photo collections",
+    "url": "https://buondua.com/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "PKU NetDisk",
-    "url": "https://disk.pku.edu.cn/anyshare/m/en-us/login",
+    "name": "Beautiful Naked Girls And Nude Models @ Elite Babes",
+    "url": "https://www.elitebabes.com/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "医学部选课",
-    "url": "https://xsxk.bjmu.edu.cn/xsxkapp/sys/xsxkapp/*default/index.do",
+    "name": "Everia.club – Everia.club",
+    "url": "https://everia.club/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "PBL中心",
-    "url": "https://pbl.bjmu.edu.cn/index/index/hycktype/PBL",
+    "name": "Femjoy Girls and Models at femjoyhunter.com",
+    "url": "https://www.femjoyhunter.com/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "Webvpn_北京大学医学部网络安全与信息化技术中心",
-    "url": "https://xxzx.bjmu.edu.cn/fwzn/VPNfw/Webvpn/index.htm",
+    "name": "FoamGirl-Share sexy asian girl photos",
+    "url": "https://foamgirl.net/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
     ]
   },
   {
-    "name": "WallessPKU (0009-0001-5878-5635) - ORCID",
-    "url": "https://orcid.org/0009-0001-5878-5635",
+    "name": "FTV Girls and Models at ftvhunter.com",
+    "url": "https://www.ftvhunter.com/",
     "folders": [
-      "pku"
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "TOP - Hentai Cosplay",
+    "url": "https://hentai-cosplay-xxx.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "JJCOS",
+    "url": "https://jjcos.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "Joymii Girls and Models at joymiihub.com",
+    "url": "https://www.joymiihub.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "高清美女寫真集|街拍美女|帅哥圖片|明星寫真大全-俊美圖",
+    "url": "https://meijuntu.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "Kiutaku",
+    "url": "https://kiutaku.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "Met Art Models and Girls at Metarthunter.com",
+    "url": "https://www.metarthunter.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "MissKon.com – Daily Hottie with High Quality",
+    "url": "https://misskon.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "Mitaku - Ero Cosplay",
+    "url": "https://mitaku.net/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "🔥 Free leakes ONLYFANS PATREON TWITCH Photos & Videos - OSOSEDKI.COM - OSOSEDKI",
+    "url": "https://ososedki.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "色圖網 - 成人情色圖片",
+    "url": "https://www.photos18.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "Playboy Playmates and Centerfolds at pmatehunter.com",
+    "url": "https://pmatehunter.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "X-Art Free HD porn Movies and Pictures",
+    "url": "https://www.xarthunter.com/",
+    "folders": [
+      "infinite",
+      "image"
+    ]
+  },
+  {
+    "name": "Free Porn Pics & Sex Photos - Porno, XXX, Images, Categories",
+    "url": "https://www.pornpics.com/",
+    "folders": [
+      "infinite",
+      "image"
     ]
   },
   {
     "name": "WallessPKU",
     "url": "https://wallesspku.org/zh/",
     "folders": [
-      "pku"
+      "resource",
+      "vpn"
+    ]
+  },
+  {
+    "name": "WallessPKUid",
+    "url": "https://orcid.org/0009-0001-5878-5635",
+    "folders": [
+      "resource",
+      "vpn"
     ]
   },
   {
     "name": "WallessPKU User Profile",
     "url": "https://profile.wallesspku.space/profile/2410122417@stu.pku.edu.cn/L9M5DGP6",
     "folders": [
-      "pku"
+      "resource",
+      "vpn"
     ]
   },
   {
-    "name": "tp date",
-    "url": "https://tpdate.com/?login=1",
+    "name": "Telegram频道群组导航",
+    "url": "https://tgnav.github.io/",
     "folders": [
-      "pku"
+      "resource",
+      "navi"
     ]
   },
   {
-    "name": "北京大学学生邮件系统",
-    "url": "https://mail.stu.pku.edu.cn/",
-    "folders": [
-      "pku",
-      "mail"
-    ]
-  },
-  {
-    "name": "北京大学医学部邮件系统",
-    "url": "https://mail.bjmu.edu.cn/coremail/",
-    "folders": [
-      "pku",
-      "mail"
-    ]
-  },
-  {
-    "name": "北大未名BBS - 北京大学校园论坛，北大人的网上精神家园",
-    "url": "https://bbs.pku.edu.cn/v2/mobile/home.php",
-    "folders": [
-      "pku",
-      "hole"
-    ]
-  },
-  {
-    "name": "北大树洞",
-    "url": "https://treehole.pku.edu.cn",
-    "folders": [
-      "pku",
-      "hole"
-    ]
-  },
-  {
-    "name": "SJTU-Application",
-    "url": "https://survivesjtu.github.io/SJTU-Application/#/",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "北京大学选课",
-    "url": "https://iaaa.pku.edu.cn/iaaa/oauth.jsp?appID=syllabus&appName=%E5%AD%A6%E7%94%9F%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F&redirectUrl=http://elective.pku.edu.cn:80/elective2008/ssoLogin.do",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "SurviveSJTUManual",
-    "url": "https://survivesjtu.gitbook.io/survivesjtumanual",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "上海交通大学教学信息服务网",
-    "url": "https://i.sjtu.edu.cn/xtgl/login_slogin.html",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "闭 借书",
-    "url": "https://calling.lib.pku.edu.cn/#/login",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "北京大学医学部解剖学教研室 | 在线测试系统",
-    "url": "http://anat.bjmu.edu.cn/question/questions_01.htm",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "https://quiz.huh.moe/",
-    "url": "https://quiz.huh.moe/",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "【转载】北大折叠 - 日记 - 豆瓣",
-    "url": "https://m.douban.com/note/603393107/?dt_dapp=1",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "切片",
-    "url": "http://202.112.180.47/DSE/Index",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "组胚切片",
-    "url": "http://202.112.180.16/dse",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "病理切片",
-    "url": "http://202.112.180.47/DSE/Login?ReturnUrl=%2fDSE%2fIndex",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "背习概",
-    "url": "https://syksykccc.github.io/xg/site/index.html",
-    "folders": [
-      "pku",
-      "null"
-    ]
-  },
-  {
-    "name": "PKU NetDisk",
-    "url": "https://disk.pku.edu.cn/anyshare/m/en-us/link/AA1AD7EAB6673943F4A0527A6D910356F0/?expires_at=1970-01-01T08%3A00%3A00%2B08%3A00&item_type=folder&password_required=false&title=2026%E5%A4%A7%E7%A4%BC%E5%8C%85&type=anonymous&verify_mobile=false",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "北医教育处",
-    "url": "https://jiaoyuchu.bjmu.edu.cn/",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "北京大学校内信息门户",
-    "url": "https://portal.pku.edu.cn/portal2017/#/bizCenter?rand=0.5007781927019889",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "portal.pku.edu.cn",
-    "url": "https://portal.pku.edu.cn/",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "正版",
-    "url": "https://software.pku.edu.cn/index.html",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "stata16许可证过期怎么办?Stata16安装教程+永久授权许可步骤 - Stata专版 - 经管之家",
-    "url": "https://bbs.pinggu.org/thread-11194805-1-1.html",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "PKU NetDisk2026",
-    "url": "https://disk.pku.edu.cn/anyshare/en-us/link/AA1AD7EAB6673943F4A0527A6D910356F0?_tb=none&expires_at=1970-01-01T08%3A00%3A00%2B08%3A00&item_type=folder&password_required=false&title=2026%E5%A4%A7%E7%A4%BC%E5%8C%85&type=anonymous&verify_mobile=false",
-    "folders": [
-      "pku"
-    ]
-  },
-  {
-    "name": "Z-Library – 世界上最大的电子图书馆。自由访问知识和文化。",
-    "url": "https://zh.z-library.sk/",
-    "folders": [
-      "acgb"
-    ]
-  },
-  {
-    "name": "插画、漫画、小说作品交流服务 [pixiv]",
-    "url": "https://www.pixiv.net/",
-    "folders": [
-      "acgb"
-    ]
-  },
-  {
-    "name": "影猫の仓库 - 免费观影第一站 !",
-    "url": "https://www.ymck.pro/",
-    "folders": [
-      "acgb"
-    ]
-  },
-  {
-    "name": "硬核指南 - 够高清才是真硬核！",
+    "name": "硬核指南、",
     "url": "https://yinghezhinan.com/",
     "folders": [
-      "acgb"
+      "resource",
+      "navi"
     ]
   },
   {
-    "name": "拳皇Wing1.2 - oldswf - 无需安装flash即可在线游玩的小游戏站",
+    "name": "翻翻墙导航",
+    "url": "https://www.ffq.la/",
+    "folders": [
+      "resource",
+      "navi"
+    ]
+  },
+  {
+    "name": "McKinsey Greater China",
+    "url": "https://www.mckinsey.com.cn/",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "第一财经杂志",
+    "url": "https://www.cbnweek.com/",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "数读_网易新闻",
+    "url": "https://data.163.com/",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "财新网",
+    "url": "https://www.caixin.com/",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "标准地图服务系统",
+    "url": "http://bzdt.ch.mnr.gov.cn/",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "免费素材图片",
+    "url": "https://www.pexels.com/zh-cn/",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "iconfont-阿里巴巴矢量图标库",
+    "url": "https://www.iconfont.cn/collections/detail?spm=a313x.collections_index.i1.d9df05512.42093a81ZoET9L&cid=53942",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "PPT模板 - PPT模板免费下载 - 免费PPT模板下载 - 微软officePLUS",
+    "url": "https://www.officeplus.cn/?spm=5176.28103460.0.0.6bd02988ZUOtxR",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "超级简历WonderCV - AI智能简历制作工具,HR推荐专业中英文简历模板免费下载",
+    "url": "https://www.wondercv.com/?spm=5176.28103460.0.0.6bd02988ZUOtxR",
+    "folders": [
+      "resource",
+      "may resource"
+    ]
+  },
+  {
+    "name": "pixiv",
+    "url": "https://www.pixiv.net/",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "Z-Library",
+    "url": "https://zh.z-library.sk/",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "影猫の仓库",
+    "url": "https://www.ymck.pro/",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "拳皇",
     "url": "https://oldswf.com/game/65646#google_vignette",
     "folders": [
-      "acgb"
-    ]
-  },
-  {
-    "name": "Bangumi 番组计划",
-    "url": "https://bangumi.tv/",
-    "folders": [
-      "acgb"
+      "resource"
     ]
   },
   {
     "name": "听听网",
     "url": "https://www.ttw.cx/singer/633252346377.html",
     "folders": [
-      "acgb"
+      "resource"
     ]
   },
   {
-    "name": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+    "name": "影视飓风",
+    "url": "https://www.ysjf.com/home",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "慕容美杀手传奇",
+    "url": "https://m.gulongbbs.com/wuxia/murongmei/sscq/",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "首頁-包子漫畫",
+    "url": "https://baozimh.org/",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "日本漫畫_在線漫畫閱讀第一站_mangabz",
+    "url": "https://mangabz.com/",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "zero搬运网",
+    "url": "https://www.zerobyw33.com/Android/Android/",
+    "folders": [
+      "resource"
+    ]
+  },
+  {
+    "name": "Arena AI",
     "url": "https://arena.ai/",
-    "folders": [
-      "tool"
-    ]
-  },
-  {
-    "name": "翻翻墙导航 - 机场导航 | 翻墙导航 | 机场推荐 | 优质SS/Vmess/Vless/Trojan节点推荐",
-    "url": "https://www.ffq.la/",
-    "folders": [
-      "tool"
-    ]
-  },
-  {
-    "name": "S98 三模版+有线 电子说明书",
-    "url": "https://book.yunzhan365.com/tvuvw/smol/mobile/index.html",
     "folders": [
       "tool"
     ]
@@ -853,31 +1329,108 @@
     ]
   },
   {
-    "name": "Alan's Blog - 个人博客 - -设计&开发",
-    "url": "https://www.toalan.com/",
+    "name": "yandeximage",
+    "url": "https://yandex.ru/images/touch/?utm_source=perplexity&lr=10466&redircnt=1788937271.1",
     "folders": [
       "tool"
     ]
   },
   {
-    "name": "ATK HUB",
-    "url": "https://hub.atk.pro/",
-    "folders": [
-      "tool"
-    ]
-  },
-  {
-    "name": "哔哩哔哩(bilibili)视频解析下载 - 保存 B 站视频到手机、电脑",
+    "name": "bilidown",
     "url": "https://snapany.com/zh/bilibili?utm_source=chatgpt.com",
     "folders": [
       "tool"
     ]
   },
   {
-    "name": "odown.cc/bilibili?utm_source=chatgpt.com",
+    "name": "bilidownload",
     "url": "https://odown.cc/bilibili?utm_source=chatgpt.com",
     "folders": [
       "tool"
+    ]
+  },
+  {
+    "name": "stata16",
+    "url": "https://bbs.pinggu.org/thread-11194805-1-1.html",
+    "folders": [
+      "tips"
+    ]
+  },
+  {
+    "name": "S98",
+    "url": "https://book.yunzhan365.com/tvuvw/smol/mobile/index.html",
+    "folders": [
+      "tips"
+    ]
+  },
+  {
+    "name": "ATK HUB鼠标",
+    "url": "https://hub.atk.pro/",
+    "folders": [
+      "tips"
+    ]
+  },
+  {
+    "name": "Alan's Blog",
+    "url": "https://www.toalan.com/",
+    "folders": [
+      "tips"
+    ]
+  },
+  {
+    "name": "Bangumi",
+    "url": "https://bangumi.tv/",
+    "folders": [
+      "social"
+    ]
+  },
+  {
+    "name": "百度贴吧",
+    "url": "https://tieba.baidu.com/",
+    "folders": [
+      "social"
+    ]
+  },
+  {
+    "name": "DrugBank",
+    "url": "https://go.drugbank.com/",
+    "folders": [
+      "sci"
+    ]
+  },
+  {
+    "name": "UpToDate",
+    "url": "https://www.uptodate.cn/contents/search",
+    "folders": [
+      "sci"
+    ]
+  },
+  {
+    "name": "中华医学期刊全文数据库",
+    "url": "https://www.yiigle.com/index",
+    "folders": [
+      "sci"
+    ]
+  },
+  {
+    "name": "北京大学图书馆",
+    "url": "https://www.lib.pku.edu.cn/portal/",
+    "folders": [
+      "sci"
+    ]
+  },
+  {
+    "name": "PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "folders": [
+      "sci"
+    ]
+  },
+  {
+    "name": "百度学术",
+    "url": "https://xueshu.baidu.com/usercenter/show/baiducas?cmd=page",
+    "folders": [
+      "sci"
     ]
   }
 ]
